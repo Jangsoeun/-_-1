@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+
+    <style>
+
+        body{
+            padding-left: 100px;
+            padding-right: 100px;
+            margin: auto;
+        }
+       .logo img{
+        width: 100px;
+        height: 25px;
+       }
+       .logo{
+        display: flex;
+       }
+       .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+       }
+       .gnb{
+        margin-top: 10px;
+        margin-left: 60px;
+        width: 507px;
+       }
+       .gnb ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        width: 80%;
+        height: 100%;
+       }
+       .gnb ul li a{
+        font-size: 20px;
+        color: #0D0D0D;
+       }
+       .gnb_sub {
+        width: 48px;
+        display: flex;
+        margin-top: 30px;
+        align-items: right;
+        margin-left: 450px;
+       }
+       .gnb_sub a{
+        margin-left: 10px;
+       }
+       li{
+        list-style: none;
+       }
+       .title{
+        font-size: 64px;
+        margin-top: 24px;
+        font-weight: bold;
+       }
+       .card_ui{
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 500px;
+        background-color: aliceblue;
+        margin-top: 72px;
+        margin-left: 20px;
+       }
+       .card_ui:hover{
+        transform: scale(1.1);
+        overflow: hidden
+       }
+       .main_number{
+        position: absolute;
+        margin-top: -520px;
+        font-size: 24px;
+        color: #fff;
+        padding-left: 24px;
+        padding-top: 24px;
+       }
+       .main_title{
+        position: absolute;
+        margin-top: -200px;
+        font-size: 40px;
+        color: #fff;
+        padding-left: 24px;
+       }
+       .link{
+        text-decoration: none;
+        color: white;
+        font-weight: 100;
+    }
+    .link:hover{
+        color: #0D0D0D;
+    }
+    .button{
+        width: 100px;
+        height: 32px;
+        position: absolute;
+        margin-top: 440px;
+        margin-left: -280px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        font-size: 16px;
+       }
+       .button:hover {
+       background-color:#fff;
+       transition: 0.7s;
+       color: rgb(0, 0, 0);
+       border: 0px;
+    }
+    .visit{
+        margin-top: 76px;
+        font-size: 32px;
+    }
+    .content{
+        width: 1440px;
+        
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!--네비게이션 -->
+    <header class="header">
+        <!--네비게이션 로고-->
+            <h1 class="logo">
+                <a href="#">
+                  <img src="image/logo.png.png" alt="logo">
+                </a>
+            </h1>
+        <!--네비게이션 메뉴-->
+            <nav class="gnb">
+                <ul>
+                  <li><a href="./subpage.html">visit</a></li>
+                  <li><a href="./subpage.html">store</a></li>
+                  <li><a href="./subpage.html">arts</a></li>
+                  <li><a href="./subpage.html">what's on</a></li>
+                </ul>
+              </nav>
+        <!--네비게이션 아이콘-->
+              <ul class="gnb_sub">
+                <li class="search">
+                  <a href="#"><img src="image/icon_search.png.png" alt="" width="24px" height="24px"></a>
+                </li>
+
+                <li class="menu">
+                    <a href="#"><img src="image/icon_menu.png.png" alt=""width="24px" height="24px"></a>
+                  </li>
+              </ul>
+    </header>
+
+        <!--메인페이지 타이틀 큰 글자-->
+            <div class="title">11 West 53 Street, Manhattan</div>
+
+        <!--메인페이지 컨텐츠-->
+            <div class="content">
+                <div class="card_ui" wi>
+                    <img src="image/main_image1.jpg" width="300px" height="500px" alt="">
+                    <p class="main_number">01</p>
+                    <p class="main_title">Georgia<br> O'Keeffe</p>
+                    <button type="button" class="button"><a class="link" href="./subpage.html">details</a></button>
+                </div>
+                
+                <div class="card_ui" wi>
+                    <img src="image/main_image2.jpg" width="300px" height="500px" alt="">
+                    <p class="main_number">02</p>
+                    <p class="main_title">Chosen<br> Memories</p>
+                    <button type="button" class="button"><a class="link" href="./subpage.html">details</a></button>
+                </div>
+
+                <div class="card_ui" wi>
+                    <img src="image/main_image3.jpg" width="300px" height="500px" alt="">
+                    <p class="main_number">03</p>
+                    <p class="main_title">Jacob <br>Elizabeth</p>
+                    <button type="button" class="button"><a class="link" href="./subpage.html">details</a></button>
+                </div>
+
+                <div class="card_ui" wi>
+                    <img src="image/main_image4.jpg" width="300px" height="500px" alt="">
+                    <p class="main_number">04</p>
+                    <p class="main_title">Refik <br> Anadol</p>
+                    <button type="button" class="button"><a class="link" href="./subpage.html">details</a></button>
+                </div>
+
+                 <!--footer-->
+            <div class="visit">
+            </a><p class="visit_eng">Plan your visit <a href="#"><img src="image//arrow.png" width="36px" height="26px" alt="" ></a></p>
+            </div>
+        
+
+</body>
+</html>

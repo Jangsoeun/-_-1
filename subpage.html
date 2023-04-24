@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브페이지</title>
+    <style>
+        body{
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 60px;
+            margin: auto;
+        }
+       .logo img{
+        width: 100px;
+        height: 25px;
+       }
+       .logo{
+        display: flex;
+       }
+       .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+       }
+       .gnb{
+        margin-top: 10px;
+        margin-left: 60px;
+        width: 507px;
+       }
+       .gnb ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        width: 80%;
+        height: 100%;
+       }
+       .gnb ul li a{
+        font-size: 20px;
+        color: #0D0D0D;
+       }
+       .gnb_sub {
+        width: 48px;
+        display: flex;
+        margin-top: 30px;
+        align-items: right;
+        margin-left: 450px;
+       }
+       .gnb_sub a{
+        margin-left: 10px;
+       }
+       li{
+        list-style: none;
+       }
+
+       section.product-intro{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+        }
+
+        section.product-image{
+        width: 700px;
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 156px;
+        }
+
+        section.product-image figcaption{
+            margin-bottom: 36px;
+            padding: 24px;
+            font-size: 16px;
+            font-weight: 100;
+            width: 680px;
+        }
+        main{
+            display: flex;
+            margin-top: 76px;
+        }
+        .sub_title{
+            font-size: 64px;
+            font-weight: bold;
+        }
+        .button_back, .button_next{
+        width: 100px;
+        height: 36px;
+        position: absolute;
+        border-radius: 50px;
+        border: 1px solid #000000;
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        font-size: 20px;
+        margin-top: 300px;
+       }
+       .button_next{
+        margin-left: 120px;
+       }
+       .button_back:hover, .button_next:hover {
+       background-color:black;
+       transition: 0.7s;
+       color: white;
+       border: 0px;
+    }
+    .visit{
+        margin-top: 200px;
+        font-size: 32px;
+    }
+
+
+    </style>
+</head>
+<body>
+        <!--네비게이션 -->
+     <header class="header">
+        <!--네비게이션 로고-->
+            <h1 class="logo">
+                <a href="./mainpage.html">
+                  <img src="image/logo.png.png" alt="logo">
+                </a>
+            </h1>
+        <!--네비게이션 메뉴-->
+            <nav class="gnb">
+                <ul>
+                  <li><a href="#">visit</a></li>
+                  <li><a href="#">store</a></li>
+                  <li><a href="#">arts</a></li>
+                  <li><a href="#">what's on</a></li>
+                </ul>
+              </nav>
+        <!--네비게이션 아이콘-->
+              <ul class="gnb_sub">
+                <li class="search">
+                  <a href="#"><img src="image/icon_search.png.png" alt="" width="24px" height="24px"></a>
+                </li>
+
+                <li class="menu">
+                    <a href="#"><img src="image/icon_menu.png.png" alt=""width="24px" height="24px"></a>
+                  </li>
+              </ul>
+    </header>
+
+    <main>
+        <!--번호 및 작품 제목-->
+        <section class="product-intro">
+            <h2 class="number">01</h2>
+            <div class="sub_title">Georgia<br>O'Keeffe</div>
+
+            <button type="button" class="button_back">BACK<a href="#"><img src="image//arrow.png" width="18px" height="10px" alt="" ></a></button>
+            <button type="button" class="button_next">NEXT<a href="#"><img src="image//arrow.png" width="18px" height="10px" alt="" ></a></button>
+
+            <!--footer-->
+            <div class="visit">
+            </a><p class="visit_eng">Plan your visit <a href="#"><img src="image//arrow.png" width="36px" height="26px" alt="" ></a></p>
+        </section>
+
+        <!--작품 설명 및 사진-->
+          <section class="product-image">
+            <figcaption>The exhibition is organized by Samantha Friedman, Associate Curator, Department of Drawings and Prints, with Laura Neufeld, Associate Paper Conservator, The David Booth Conservation Department, and Emily Olek, Curatorial Assistant, Department of Drawings and Prints. Realized with the participation of the Georgia O'Keeffe Museum, Santa Fe.</figcaption>
+            <img src="image/image01.jpg" width="710px" height="420px" alt="">
+          </section>
+    </main>
+
+    <script src="principles.js"></script>  
+</body>
+</html>
